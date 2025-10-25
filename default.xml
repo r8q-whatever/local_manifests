@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS/" />
+  <remote name="muppets"
+          fetch="https://github.com/TheMuppets/" />
+  <remote name="skye-tachyon"
+          fetch="https://github.com/skye-tachyon/" />
+  <remote name="linux-on-droid"
+          fetch="https://github.com/Linux-on-droid/" />
+  <remote name="r8q-whatever"
+          fetch="https://github.com/r8q-whatever/" />
+
+  <default revision="lineage-23.0" />
+
+  <project path="device/samsung/r8q" name="android_device_samsung_r8q" remote="r8q-whatever" revision="lineage-23.0" />
+  <project path="device/samsung/sm8250-common" name="android_device_samsung_sm8250-common" remote="lineage" />
+
+  <project path="kernel/samsung/sm8250" name="not_r8q" remote="skye-tachyon" revision="lindroid" />
+
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="lineage" />
+  <project path="hardware/samsung/nfc" name="android_hardware_samsung_nfc" remote="lineage" />
+  
+  <project path="vendor/samsung/r8q" name="proprietary_vendor_samsung_r8q" remote="muppets" />
+  <project path="vendor/samsung/sm8250-common" name="proprietary_vendor_samsung_sm8250-common" remote="muppets" />
+  
+  <project path="vendor/lindroid" name="vendor_lindroid" remote="linux-on-droid" revision="lindroid-22.1" />
+  <project path="external/lxc" name="external_lxc" remote="linux-on-droid" revision="lindroid-21" />
+  <project path="libhybris" name="libhybris" remote="linux-on-droid" revision="lindroid-21" />
+</manifest>
